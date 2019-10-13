@@ -5,19 +5,17 @@
 FooClass FooObject;
 
 void setup() {
-
-	Serial.begin(115200);
-	delay(1000);
-
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
-
-	Serial.println("Hello world");
-	FooObject.firstFooMethod();
-	delay(1000);
-	FooObject.secondFooMethod();
-	delay(1000);
-
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on
+  delay(500);                       // wait for half a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off
+  delay(200);                       // wait for half a second
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on
+  delay(600);                       // wait for half a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off
+  delay(1000);                       // wait for half a second
 }
-
