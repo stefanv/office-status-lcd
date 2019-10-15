@@ -1,3 +1,6 @@
 [submodule "Arduino-Makefile"]
 	path = Arduino-Makefile
 	url = https://github.com/WeAreLeka/Arduino-Makefile
+[submodule "lib/LiquidCrystal_I2C"]
+	path = lib/LiquidCrystal_I2C
+	url = git@github.com:fdebrabander/Arduino-LiquidCrystal-I2C-library.git
